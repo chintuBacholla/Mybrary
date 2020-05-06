@@ -1,5 +1,7 @@
 //jshint esversion:6
-
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').parse();
+}
 
 const express = require("express");
 const bodyParser = require("body-parser");
